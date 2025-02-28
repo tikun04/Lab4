@@ -1,0 +1,24 @@
+<h2>Presidents of Ireland</h2><!--Heading-->
+
+<ul><!--Creating unordered list-->
+
+    <li>*ngFor= "let president of presidents" 
+        {{ presidents }}   <!--iterating presidents-->
+
+    </li>  
+  
+</ul>
+
+<ol>
+
+    @for(president of presidents; track president){<!--Creating for loop of presidents -->
+        <li> {{ president }}</li><!--printing presidents using variable-->
+    }
+</ol>
+
+<ul>
+
+    @for (pres of mypresidents;track pres){<!--Creating for loop of presidents names and terms -->
+        <li>{{ pres.name }}, {{pres.term }}</li><!--Printing president names and terms-->
+    }
+</ul>
